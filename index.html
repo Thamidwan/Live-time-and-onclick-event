@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thami dwane</title>
+	<link rel="stylesheet" type="text/css" href="summative.css">
+</head>
+<body onload="renderTime()">
+	<a href="item #3" id="lef">WeBuild</a>
+	<a id="con">CONTACT</a>
+	<div  >
+		<a id="cen">WEBUILD</a>
+		<p>We're working hard to improve our website and we'll ready to launch after</p>
+		<p id="take"></p>
+		<p id="show"></p>
+		<form id="form1">
+			<input id="thami" type="name" name="text" placeholder="Your Name">
+			<input id="dwane" type="email" name="email" placeholder="Your Email"></br>
+			<button onclick="repTop()">Get notified!</button>
+		
+		</form>
+	</div>
+	<script type="text/javascript">
+        function repTop(){
+        	var str = document.getElementById("thami").value;
+        	var tp = document.getElementById("dwane").value;
+        	alert("Thank you "+ str + " for subscribing with " + tp);
+        }
+
+		function renderTime(){
+			let d = new Date();
+			let h = d.getHours();
+			let m = d.getMinutes();
+			if (m<10){
+				m ="0"+m;
+			}
+			if (h<10) {
+				h = "0" + h ;
+			}
+			let s = d.getSeconds();
+			if(s<10){
+				s="0"+s;
+			}
+			document.getElementById("show").innerHTML = h + ":" + m + ":" + s ;
+			setTimeout(renderTime,1000);
+		}
+
+	</script>
+
+</body>
+</html>

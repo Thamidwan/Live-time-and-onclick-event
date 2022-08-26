@@ -1,0 +1,22 @@
+div{
+	text-align: center;
+	line-height: 20px;
+	color: white;
+}
+body{
+	background-image: url(max-harlynking--pHHVcxNbq0-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+form{
+	line-height: 40px;
+	word-spacing: 25px;
+}
+button{
+	background-color:  orange;
+	width: 120px;
+	height: 15;
+}
+input{
+	padding: 5px;
+}
